@@ -1,9 +1,8 @@
 import glob
 
 from setuptools import setup
-from setuptools.extension import Extension
 from setuptools.command import build_ext
-
+from setuptools.extension import Extension
 
 ext = Extension("pymangle._mangle", ["pymangle/_mangle.c",
                                      "pymangle/mangle.c",
@@ -33,7 +32,7 @@ description = "A python code to read and work with Mangle masks."
 with open('README.md') as fobj:
     long_description = fobj.read()
 
-setup(name="pymangle",
+setup(name="sdss-pymangle",
       packages=['pymangle'],
       description=description,
       long_description=long_description,
